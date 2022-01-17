@@ -22,7 +22,7 @@ export function MenuNavigation() {
       <s.Content>
         {linksForNavigation.map((path) => (
           <Li>
-            <A href="www.linkedin.com/in/cesar-damasceno">{path}</A>
+            <A href="https://www.linkedin.com/in/cesar-damasceno">{path}</A>
           </Li>
         ))}
       </s.Content>

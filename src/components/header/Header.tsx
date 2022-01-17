@@ -20,7 +20,7 @@ export function Header() {
         <s.ContentButtons>
           {['área do Professor', 'área do aluno'].map((ph) => (
             <Button>
-              <A href="www.linkedin.com/in/cesar-damasceno">{ph}</A>
+              <A href="https://www.linkedin.com/in/cesar-damasceno">{ph}</A>
             </Button>
           ))}
           <ButtonMenuMobile valueHook={{ ...valuesHook }} />

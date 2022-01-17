@@ -43,7 +43,7 @@ export function Footer() {
         </s.Content>
         <s.SocialNetworks>
           {ICONSNS.map((icon) => (
-            <A href="www.linkedin.com/in/cesar-damasceno">
+            <A href="https://www.linkedin.com/in/cesar-damasceno">
               <img src={icon.icon} alt={icon.alt} />
             </A>
           ))}
