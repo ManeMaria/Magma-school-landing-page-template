@@ -32,11 +32,9 @@ export const Content = styled.ul`
   li {
     padding: 8px;
     transition: var(--transition-d);
+    border-bottom: 2px solid transparent;
     :hover {
-      background: var(--white);
-      a {
-        color: var(--blue);
-      }
+      border-bottom: 2px solid var(--white);
     }
   }
 
