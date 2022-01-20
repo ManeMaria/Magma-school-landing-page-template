@@ -3,7 +3,6 @@ import { CustomProps } from '../../types/styles.protocols';
 
 export const Container = styled.div<CustomProps>`
   width: 100%;
-  /* height: 100%; */
   background: ${(props) => props.backGroundColor};
   z-index: ${(props) => props.zIndex};
   position: absolute;
@@ -18,7 +17,6 @@ export const SubContainer = styled.div<CustomProps>`
 
 export const Content = styled.div`
   width: 100%;
-  /* height: 100%; */
   margin: auto;
   display: flex;
   justify-content: space-around;

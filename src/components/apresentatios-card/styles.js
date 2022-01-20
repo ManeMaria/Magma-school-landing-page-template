@@ -12,7 +12,7 @@ export const Container = styled.div`
   @media (max-width: 375px) {
     height: 150vh;
   }
-  
+
   @media (max-width: 359px) {
     height: 200vh;
   }
