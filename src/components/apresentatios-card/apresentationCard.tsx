@@ -16,6 +16,7 @@ import { ContentCardFundamental1 } from './contentCard/contentCardFundamental1';
 import { ContentCardFundamental2 } from './contentCard/contentCardFundamental2';
 import { ContentCardMedio } from './contentCard/contentCardMedio';
 import { InitialArgs, Dispatch, IPropsCard } from './protocols';
+import { Sections } from '../section/Section';
 
 const initialArgs: InitialArgs = {
   card4: 1,
@@ -66,17 +67,6 @@ function reducer(state: InitialArgs, action: Dispatch) {
 
 export function ApresentatiosCard() {
   const [state, dispatch] = useReducer(reducer, initialArgs);
-  // const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
-  // function checkScreenWidth() {
-  //   setScreenWidth(window.innerWidth);
-  // }
-
-  // useEffect(() => {
-  //   window.addEventListener('resize', checkScreenWidth);
-  // }, []);
-
-  // const leftValuesForScreensSmallerThan780: string[] = ['5%', '25%', '45%', '65%'];
-  // const isAt780: number | boolean | null = screenWidth && screenWidth < 1080;
 
   const propsCardInfantil: IPropsCard = {
     backGroundColor: 'var(--light-blue)',
@@ -119,11 +109,13 @@ export function ApresentatiosCard() {
   };
 
   return (
-    <s.Container>
-      <ContentCardInfantil {...propsCardInfantil} />
-      <ContentCardFundamental1 {...propsCardFundamental1} />
-      <ContentCardFundamental2 {...propsCardFundamental2} />
-      <ContentCardMedio {...propsCardMedio} />
-    </s.Container>
+    <Sections>
+      <s.Container>
+        <ContentCardInfantil {...propsCardInfantil} />
+        <ContentCardFundamental1 {...propsCardFundamental1} />
+        <ContentCardFundamental2 {...propsCardFundamental2} />
+        <ContentCardMedio {...propsCardMedio} />
+      </s.Container>
+    </Sections>
   );
 }

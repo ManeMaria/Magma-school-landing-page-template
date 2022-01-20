@@ -18,11 +18,11 @@ export const ContainerS2 = styled.div`
     font-weight: 700;
   }
 
+
   @media (max-width: 780px){
-    width: 100vw;
-    height: 50vh;
+    width: 100vw; 
   }
- 
+
 `;
 
 export const ContainerButtonS2 = styled(ContainerButton)`

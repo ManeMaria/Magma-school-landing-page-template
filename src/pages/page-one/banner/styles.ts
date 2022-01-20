@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import backgroundPrincipal from '../../../assets/images/background-principal.png';
 
-export const Container = styled.section`
+export const Container = styled.div`
   width: 100%;
   height: 65vh;
   background: url(${backgroundPrincipal}) no-repeat;
@@ -45,7 +45,7 @@ export const PhraseTop = styled.p`
   line-height: 0.8;
 
   @media (max-width: 1080px){
-    font-size: 7.5em;
+    font-size: 6.7em;
   }
 
   @media (max-width: 559px){
@@ -61,9 +61,9 @@ export const PhraseMiddle = styled(PhraseTop)`
   font-size: 4.5em;
   padding-left: 3px;
 
-  /* @media (max-width: 1080px){
-    font-size: 3em;
-  } */
+  @media (max-width: 1080px){
+    font-size: 3.7em;
+  }
 
   @media (max-width: 559px){
     font-size: 2em;
@@ -78,9 +78,9 @@ export const PhraseBottom = styled(PhraseTop)`
   font-size: 10.5em;
   letter-spacing: 1.5px;
 
-  /* @media (max-width: 1080px){
-    font-size: 7em;
-  } */
+  @media (max-width: 1080px){
+    font-size: 8.7em;
+  }
 
   @media (max-width: 559px){
     font-size: 4.7em;

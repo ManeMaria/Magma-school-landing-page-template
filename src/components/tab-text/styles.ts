@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { CustomProps } from '../../service/styles/protocls';
+import { CustomProps } from '../../types/styles.protocols';
 
 export const Container = styled.button<CustomProps>`
   width: 250px;

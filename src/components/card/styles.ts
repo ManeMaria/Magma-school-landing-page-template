@@ -1,12 +1,14 @@
 import styled from 'styled-components';
-import { CustomProps } from '../../service/styles/protocls';
+import { CustomProps } from '../../types/styles.protocols';
 
 export const Container = styled.div<CustomProps>`
   width: 100%;
+  /* height: 100%; */
   background: ${(props) => props.backGroundColor};
   z-index: ${(props) => props.zIndex};
   position: absolute;
   transition: var(--transition-d);
+  position: absolute;
 `;
 
 export const SubContainer = styled.div<CustomProps>`
@@ -16,6 +18,7 @@ export const SubContainer = styled.div<CustomProps>`
 
 export const Content = styled.div`
   width: 100%;
+  /* height: 100%; */
   margin: auto;
   display: flex;
   justify-content: space-around;
